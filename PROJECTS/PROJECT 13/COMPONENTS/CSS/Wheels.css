@@ -1,0 +1,196 @@
+/*! ******************************************************** FONTS STARTS *****************************************************************  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*! ******************************************************** FONTS ENDS *****************************************************************  */
+
+/*! ******************************************************** UNIVERSAL STARTS *****************************************************************  */
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+/*! ******************************************************** UNIVERSAL ENDS *******************************************************************  */
+
+/*! ************************************************************* MAIN STARTS ****************************************************************  */
+
+/*? ************************************************************* HOME STARTS ****************************************************************  */
+main{
+    height: 100%;
+}
+.Home{
+    width: 100%;
+    height: 730px;
+    /* background-image: url(../../ASSETS/IMAGES/bg-8.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    perspective: 200px;
+    transition: all 3s linear;
+    animation: HomeBack 3s ease infinite;
+    transform-style: preserve-3d;
+
+}
+@keyframes HomeBack {
+    0%{
+        background-image: url(../../ASSETS/IMAGES/bg-8.jpg);
+        /* opacity: 0.95; */
+    }
+    100%{
+        background-image: url(../../ASSETS/IMAGES/bg-8-1.jpg);
+        transform-style: preserve-3d;
+        opacity: 1;
+
+    }
+}
+header{
+    height: 100px;
+    width: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header #CarLogo{
+    width: 11%;
+    height: 70px;
+    /* border: 1px solid; */
+
+}
+#CarLogo img{
+    width: 82%;
+    position: relative;
+    left: 5%;
+    top: 10%;
+}
+header nav{
+    height: 74px;
+    width: 65%;
+    /* border: 1px solid; */
+   
+}
+header nav ul{
+    height: 55px;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul li{
+    height: 35px;
+    width: 13%;
+    display: inline-block;
+    margin-left: 2%;
+    transition: all 2s linear;
+}
+
+header nav ul li a{
+    height: 35px;
+    width: 13%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+}
+header nav ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 3px
+}
+header #Social-Icons{
+    height: 55px;
+    width: 11%;
+    /* border: 1px solid; */
+}
+header #Social-Icons ul{
+    width: 94%;
+}
+header #Social-Icons ul li{
+    display: inline-block;
+    height: 35px;
+    width: 20%;
+    margin-left: 5%;
+}
+
+header #Social-Icons ul li a i{
+    font-size: 1.35rem;
+    color: white;
+}
+
+.Main-Content{
+    height: 585px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.Main-Content #Container1{
+    height: 380px;
+    width: 45%;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#Container1 h2{
+    color: white;
+    font-size: 37.3px;
+    width: 90%;
+}
+#Container1 h1{
+    color: white;
+    font-size: 62.8px;
+    width: 90%;
+}
+#Container1 #Text{
+    color: red;
+    font-size: 62.8px;
+    width: 90%;
+}
+#Container1 p{
+    font-size: 22px;
+    color: white;
+    width: 90%;
+}
+#Container1 a{
+    color: white;
+    font-size: 18.8px;
+    text-align: center;
+    text-decoration: none;
+    height: 55px;
+    width: 35%;
+    border-radius: 50px;
+    line-height: 50px;
+    background-color: red;
+
+}
+#Container2{
+    position: relative;
+    top: -34%;
+    left: 6%;
+    width: 25%;
+    height: 55px;
+    /* border: 1px solid; */
+}
+#Container2 p{
+   
+    color: white;
+    font-size: 28px;
+    text-align: center;
+}
+#Container2 #Price{
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+}
+/*? ************************************************************* HOME ENDS ****************************************************************  */
+
+/*? *********************************************************** ABOUT US STARTS ***************************************************************  */
+
+/*? ************************************************************ ABOUT US ENDS ****************************************************************  */
+
+/*! ************************************************************* MAIN ENDS ****************************************************************  */
