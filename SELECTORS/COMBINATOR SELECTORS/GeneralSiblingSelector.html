@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 ~ div{
+            color: white;
+            background-color: black;
+        }
+        div ~ .gs{
+            color: cyan;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--! 4.GENERAL SIBLING SELECTOR  -->
+    <!--todo : With the help of General Sibling Selector we can target their Sibling Brother  -->
+    <!--todo : For that we need to take the help of Elder Brother ~(tilde Symbol) Younger Brother   -->
+    <!--? Syntax :  -->
+    <!--* ELDER ELEMENT NAME (~tilde symbol)  YOUNGER ELEMENT -->
+
+    <h1>GENERAL SIBLING SELECTOR</h1>
+
+    <div>
+        <p>PARA 1</p>
+    </div>
+
+    <p class="gs">GENERAL SIBLING 1</p>
+    <h1 class="gs">GENERAL SIBLING 2</h1>
+    <p class="gs">GENERAL SIBLING 3</p>
+    <div class="gs">GENERAL SIBLING 4</div>
+</body>
+</html>
