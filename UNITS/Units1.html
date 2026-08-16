@@ -1,0 +1,786 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CSS Units - Complete Guide</title>
+
+    <style>
+      /* =========================================================
+           GLOBAL STYLES
+        ========================================================= */
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 30px;
+
+        font-family: Arial, Helvetica, sans-serif;
+
+        background-color: #f5f5f5;
+        color: #111;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      h2 {
+        margin-top: 50px;
+        margin-bottom: 25px;
+
+        padding: 15px 20px;
+
+        background-color: #222;
+        color: white;
+
+        border-radius: 8px;
+      }
+
+      .section-description {
+        margin-bottom: 25px;
+        line-height: 1.6;
+      }
+
+      .box {
+        margin: 20px 0;
+        padding: 15px;
+
+        background-color: white;
+
+        border: 1px solid #ccc;
+        border-radius: 8px;
+      }
+
+      .unit-label {
+        display: block;
+
+        margin-bottom: 10px;
+
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      /* =========================================================
+           1. ABSOLUTE UNITS
+           
+           Q
+           mm
+           px
+           pt
+           pc
+           cm
+           in
+        ========================================================= */
+
+      /* -------------------------
+           Q - Quarter Millimeter
+        ------------------------- */
+
+      #Q {
+        width: 1Q;
+        height: 1Q;
+
+        background-color: red;
+      }
+
+      /* -------------------------
+           mm - Millimeter
+        ------------------------- */
+
+      #MM {
+        width: 1mm;
+        height: 1mm;
+
+        background-color: orange;
+      }
+
+      /* -------------------------
+           px - Pixel
+        ------------------------- */
+
+      #PX {
+        width: 1px;
+        height: 1px;
+
+        background-color: yellow;
+      }
+
+      /* -------------------------
+           pt - Point
+        ------------------------- */
+
+      #PT {
+        width: 1pt;
+        height: 1pt;
+
+        background-color: green;
+      }
+
+      /* -------------------------
+           pc - Pica
+        ------------------------- */
+
+      #PC {
+        width: 1pc;
+        height: 1pc;
+
+        background-color: blue;
+      }
+
+      /* -------------------------
+           cm - Centimeter
+        ------------------------- */
+
+      #CM {
+        width: 1cm;
+        height: 1cm;
+
+        background-color: purple;
+      }
+
+      /* -------------------------
+           in - Inch
+        ------------------------- */
+
+      #IN {
+        width: 1in;
+        height: 1in;
+
+        background-color: brown;
+      }
+
+      /* =========================================================
+           2. FONT RELATIVE UNITS
+        ========================================================= */
+
+      html {
+        font-size: 16px;
+      }
+
+      /* -------------------------
+           rem
+        ------------------------- */
+
+      #REM {
+        width: 1rem;
+        height: 1rem;
+
+        background-color: crimson;
+      }
+
+      /* -------------------------
+           em
+        ------------------------- */
+
+      .em-parent {
+        font-size: 16px;
+      }
+
+      #EM {
+        width: 1em;
+        height: 1em;
+
+        background-color: teal;
+      }
+
+      /* =========================================================
+           3. PERCENTAGE UNIT
+        ========================================================= */
+
+      .percentage-parent {
+        width: 500px;
+        height: 150px;
+
+        border: 3px solid black;
+
+        background-color: white;
+      }
+
+      #Percentage {
+        width: 50%;
+        height: 50%;
+
+        background-color: gold;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-weight: bold;
+      }
+
+      /* =========================================================
+           4. VIEWPORT UNITS
+           
+           vw
+           vh
+           vmin
+           vmax
+        ========================================================= */
+
+      .viewport-box {
+        margin: 20px 0;
+
+        padding: 15px;
+
+        background-color: white;
+
+        border: 1px solid #ccc;
+        border-radius: 8px;
+      }
+
+      /* -------------------------
+           vw
+        ------------------------- */
+
+      #VW {
+        width: 10vw;
+        height: 10vw;
+
+        background-color: tomato;
+      }
+
+      /* -------------------------
+           vh
+        ------------------------- */
+
+      #VH {
+        width: 10vh;
+        height: 10vh;
+
+        background-color: skyblue;
+      }
+
+      /* -------------------------
+           vmin
+        ------------------------- */
+
+      #VMIN {
+        width: 10vmin;
+        height: 10vmin;
+
+        background-color: limegreen;
+      }
+
+      /* -------------------------
+           vmax
+        ------------------------- */
+
+      #VMAX {
+        width: 10vmax;
+        height: 10vmax;
+
+        background-color: violet;
+      }
+
+      /* =========================================================
+           5. SMALL / LARGE / DYNAMIC VIEWPORT UNITS
+           
+           svw
+           svh
+           lvw
+           lvh
+           dvw
+           dvh
+        ========================================================= */
+
+      /* -------------------------
+           Small Viewport Width
+        ------------------------- */
+
+      #SVW {
+        width: 10svw;
+        height: 10svw;
+
+        background-color: pink;
+      }
+
+      /* -------------------------
+           Small Viewport Height
+        ------------------------- */
+
+      #SVH {
+        width: 10svh;
+        height: 10svh;
+
+        background-color: lightgreen;
+      }
+
+      /* -------------------------
+           Large Viewport Width
+        ------------------------- */
+
+      #LVW {
+        width: 10lvw;
+        height: 10lvw;
+
+        background-color: lightblue;
+      }
+
+      /* -------------------------
+           Large Viewport Height
+        ------------------------- */
+
+      #LVH {
+        width: 10lvh;
+        height: 10lvh;
+
+        background-color: lightcoral;
+      }
+
+      /* -------------------------
+           Dynamic Viewport Width
+        ------------------------- */
+
+      #DVW {
+        width: 10dvw;
+        height: 10dvw;
+
+        background-color: coral;
+      }
+
+      /* -------------------------
+           Dynamic Viewport Height
+        ------------------------- */
+
+      #DVH {
+        width: 10dvh;
+        height: 10dvh;
+
+        background-color: darkcyan;
+      }
+
+      /* =========================================================
+           6. CONTAINER QUERY UNITS
+           
+           cqw
+           cqh
+           cqi
+           cqb
+           cqmin
+           cqmax
+        ========================================================= */
+
+      .container {
+        width: 600px;
+        height: 500px;
+
+        padding: 20px;
+
+        border: 4px solid black;
+
+        background-color: white;
+
+        container-type: size;
+
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 20px;
+
+        align-items: center;
+        justify-items: center;
+
+        margin: 0 auto;
+      }
+
+      .cq-box {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+
+        font-weight: bold;
+
+        color: white;
+
+        border: 2px solid black;
+
+        border-radius: 8px;
+      }
+
+      /* -------------------------
+           cqw
+           
+           1cqw = 1% container width
+        ------------------------- */
+
+      #CQW {
+        width: 20cqw;
+        height: 20cqw;
+
+        background-color: darkorange;
+      }
+
+      /* -------------------------
+           cqh
+           
+           1cqh = 1% container height
+        ------------------------- */
+
+      #CQH {
+        width: 20cqh;
+        height: 20cqh;
+
+        background-color: darkgreen;
+      }
+
+      /* -------------------------
+           cqi
+           
+           1cqi = 1% container inline size
+        ------------------------- */
+
+      #CQI {
+        width: 20cqi;
+        height: 20cqi;
+
+        background-color: darkblue;
+      }
+
+      /* -------------------------
+           cqb
+           
+           1cqb = 1% container block size
+        ------------------------- */
+
+      #CQB {
+        width: 20cqb;
+        height: 20cqb;
+
+        background-color: darkred;
+      }
+
+      /* -------------------------
+           cqmin
+           
+           1cqmin = 1% smaller
+           container dimension
+        ------------------------- */
+
+      #CQMIN {
+        width: 20cqmin;
+        height: 20cqmin;
+
+        background-color: darkviolet;
+      }
+
+      /* -------------------------
+           cqmax
+           
+           1cqmax = 1% larger
+           container dimension
+        ------------------------- */
+
+      #CQMAX {
+        width: 20cqmax;
+        height: 20cqmax;
+
+        background-color: darkcyan;
+      }
+
+      /* =========================================================
+           7. GRID FRACTION UNIT
+           
+           fr
+        ========================================================= */
+
+      .fr-container {
+        width: 100%;
+        max-width: 900px;
+
+        margin: 0 auto;
+
+        display: grid;
+
+        grid-template-columns:
+          1fr
+          2fr
+          3fr;
+
+        gap: 20px;
+      }
+
+      .fr-box {
+        min-height: 150px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        border: 2px solid black;
+
+        border-radius: 8px;
+
+        font-size: 20px;
+        font-weight: bold;
+
+        color: white;
+      }
+
+      .fr-1 {
+        background-color: lightcoral;
+      }
+
+      .fr-2 {
+        background-color: lightgreen;
+      }
+
+      .fr-3 {
+        background-color: lightblue;
+        color: black;
+      }
+
+      /* =========================================================
+           RESPONSIVE DESIGN
+        ========================================================= */
+
+      @media (max-width: 700px) {
+        body {
+          padding: 15px;
+        }
+
+        .container {
+          width: 100%;
+          height: 600px;
+
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .fr-container {
+          grid-template-columns: 1fr;
+        }
+
+        .percentage-parent {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 450px) {
+        .container {
+          height: 900px;
+
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- =========================================================
+         PAGE TITLE
+    ========================================================= -->
+
+    <h1>CSS Units — Complete Demonstration</h1>
+
+    <!-- =========================================================
+         1. ABSOLUTE UNITS
+    ========================================================= -->
+
+    <h2>1. Absolute Units — Small to Large</h2>
+
+    <p class="section-description">
+      Absolute units represent fixed CSS measurements.
+    </p>
+
+    <div class="box">
+      <span class="unit-label"> 1Q — Quarter Millimeter </span>
+
+      <div id="Q"></div>
+    </div>
+
+    <div class="box">
+      <span class="unit-label"> 1mm — Millimeter </span>
+
+      <div id="MM"></div>
+    </div>
+
+    <div class="box">
+      <span class="unit-label"> 1px — Pixel </span>
+
+      <div id="PX"></div>
+    </div>
+
+    <div class="box">
+      <span class="unit-label"> 1pt — Point </span>
+
+      <div id="PT"></div>
+    </div>
+
+    <div class="box">
+      <span class="unit-label"> 1pc — Pica </span>
+
+      <div id="PC"></div>
+    </div>
+
+    <div class="box">
+      <span class="unit-label"> 1cm — Centimeter </span>
+
+      <div id="CM"></div>
+    </div>
+
+    <div class="box">
+      <span class="unit-label"> 1in — Inch </span>
+
+      <div id="IN"></div>
+    </div>
+
+    <!-- =========================================================
+         2. FONT RELATIVE UNITS
+    ========================================================= -->
+
+    <h2>2. Font Relative Units</h2>
+
+    <div class="box">
+      <span class="unit-label"> 1rem </span>
+
+      <p>1rem = root element font-size.</p>
+
+      <div id="REM"></div>
+    </div>
+
+    <div class="box em-parent">
+      <span class="unit-label"> 1em </span>
+
+      <p>1em = current element's font-size context.</p>
+
+      <div id="EM"></div>
+    </div>
+
+    <!-- =========================================================
+         3. PERCENTAGE
+    ========================================================= -->
+
+    <h2>3. Percentage Unit — %</h2>
+
+    <div class="percentage-parent">
+      <div id="Percentage">50%</div>
+    </div>
+
+    <!-- =========================================================
+         4. VIEWPORT UNITS
+    ========================================================= -->
+
+    <h2>4. Viewport Units</h2>
+
+    <div class="viewport-box">
+      <span class="unit-label"> 10vw — Viewport Width </span>
+
+      <div id="VW"></div>
+    </div>
+
+    <div class="viewport-box">
+      <span class="unit-label"> 10vh — Viewport Height </span>
+
+      <div id="VH"></div>
+    </div>
+
+    <div class="viewport-box">
+      <span class="unit-label"> 10vmin — Smaller Viewport Dimension </span>
+
+      <div id="VMIN"></div>
+    </div>
+
+    <div class="viewport-box">
+      <span class="unit-label"> 10vmax — Larger Viewport Dimension </span>
+
+      <div id="VMAX"></div>
+    </div>
+
+    <!-- =========================================================
+         5. SMALL / LARGE / DYNAMIC VIEWPORT
+    ========================================================= -->
+
+    <h2>5. Small, Large & Dynamic Viewport Units</h2>
+
+    <div class="viewport-box">
+      <span class="unit-label"> 10svw — Small Viewport Width </span>
+
+      <div id="SVW"></div>
+    </div>
+
+    <div class="viewport-box">
+      <span class="unit-label"> 10svh — Small Viewport Height </span>
+
+      <div id="SVH"></div>
+    </div>
+
+    <div class="viewport-box">
+      <span class="unit-label"> 10lvw — Large Viewport Width </span>
+
+      <div id="LVW"></div>
+    </div>
+
+    <div class="viewport-box">
+      <span class="unit-label"> 10lvh — Large Viewport Height </span>
+
+      <div id="LVH"></div>
+    </div>
+
+    <div class="viewport-box">
+      <span class="unit-label"> 10dvw — Dynamic Viewport Width </span>
+
+      <div id="DVW"></div>
+    </div>
+
+    <div class="viewport-box">
+      <span class="unit-label"> 10dvh — Dynamic Viewport Height </span>
+
+      <div id="DVH"></div>
+    </div>
+
+    <!-- =========================================================
+         6. CONTAINER QUERY UNITS
+    ========================================================= -->
+
+    <h2>6. Container Query Units</h2>
+
+    <p class="section-description">
+      These units are calculated relative to the size of a container rather than
+      the browser viewport.
+    </p>
+
+    <div class="container">
+      <div class="cq-box" id="CQW">20cqw</div>
+
+      <div class="cq-box" id="CQH">20cqh</div>
+
+      <div class="cq-box" id="CQI">20cqi</div>
+
+      <div class="cq-box" id="CQB">20cqb</div>
+
+      <div class="cq-box" id="CQMIN">20cqmin</div>
+
+      <div class="cq-box" id="CQMAX">20cqmax</div>
+    </div>
+
+    <!-- =========================================================
+         7. FR UNIT
+    ========================================================= -->
+
+    <h2>7. Grid Fraction Unit — fr</h2>
+
+    <p class="section-description">
+      The fr unit represents a fraction of the available space inside a CSS Grid
+      container.
+    </p>
+
+    <div class="fr-container">
+      <div class="fr-box fr-1">1fr</div>
+
+      <div class="fr-box fr-2">2fr</div>
+
+      <div class="fr-box fr-3">3fr</div>
+    </div>
+  </body>
+</html>
