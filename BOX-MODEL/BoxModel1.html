@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        #BoxModel{
+            height: 700px;
+            width: 800px;
+            margin: 0 auto;
+            border: 15px solid red;
+            background-color:khaki;
+        }
+        #BoxModel h1{
+            width: 39%;
+            position: relative;
+            left: 30%;
+            text-align: center;
+        }
+
+        #Margin{
+            height: 600px;
+            width: 650px;
+            border: 5px solid;
+            margin: 15px auto;
+            background-color:yellow;
+        }
+        #Padding{
+            height: 400px;
+            width: 400px;
+            border: 5px solid;
+            background-color:wheat;
+            margin: 0 auto;
+            padding: 35px;
+        }
+        #ContentBox{
+            height: 200px;
+            width: 200px;
+            background-color: cyan;
+            margin: 0 auto;
+        }
+        
+        #ContentBox h1{
+            position: relative;
+            left: 7%;
+            top: 15%;
+            text-align: center;
+            width: 67%;
+
+        }
+    </style>
+</head>
+<body>
+    <!--! BOX MODEL -->
+    <!--todo : Box Model it is used to Align the Layout Of the Element  -->
+    <!--todo : Box-Model it is the important concept in the CSS  -->
+    <!--todo : Box-Model it is used to Align The Component in the HTML   -->
+    <!--todo : With the help of Box Model we easily achieve the Structure  -->
+    <!--* BOX MODEL consist of the following Properties  -->
+    <!--* 1.CONTENT-BOX : Actual Content -->
+    <!--* 2.PADDING : Surrounded Area of the Content Box -->
+    <!--* 3.BORDER-BOX : It is the Border or the Boundary of the Container  -->
+    <!--* 4.MARGIN : Margin it is used to the Move the Content or Align the Content-->
+<h1>**************************************** BOX MODEL ***************************************</h1>
+    <div id="BoxModel">
+        <h1>BORDER</h1>
+        <div id="Margin">
+            <h1>MARGIN</h1>
+            <div id="Padding">
+                <h1>PADDING</h1>
+                <div id="ContentBox">
+                    <h1>CONTENT BOX</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
