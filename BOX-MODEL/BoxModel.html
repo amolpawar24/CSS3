@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Box Model</title>
+
+    <style>
+
+        /* =====================================================
+           BASIC PAGE STYLING
+        ===================================================== */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+
+        /* =====================================================
+           CSS BOX MODEL
+
+           The CSS Box Model consists of:
+
+           1. Content
+           2. Padding
+           3. Border
+           4. Margin
+        ===================================================== */
+
+        .box {
+            /* CONTENT */
+            width: 300px;
+            height: 150px;
+
+            /* PADDING
+               Space between content and border
+            */
+            padding: 30px;
+
+            /* BORDER
+               Boundary around the element
+            */
+            border: 10px solid black;
+
+            /* MARGIN
+               Space outside the border
+            */
+            margin: 50px auto;
+
+            /* Background */
+            background-color: lightblue;
+
+            /* Text */
+            text-align: center;
+        }
+
+
+        /* =====================================================
+           CONTENT STYLING
+        ===================================================== */
+
+        .box h2 {
+            margin: 20px 0 10px;
+        }
+
+        .box p {
+            margin: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- =====================================================
+         PAGE TITLE
+    ===================================================== -->
+
+    <h1>CSS Box Model</h1>
+
+
+    <!-- =====================================================
+         BOX MODEL ELEMENT
+
+         Content
+              ↓
+         Padding
+              ↓
+         Border
+              ↓
+         Margin
+    ===================================================== -->
+
+    <div class="box">
+
+        <!-- CONTENT -->
+        <h2>Content</h2>
+
+        <p>
+            This is the content area.
+        </p>
+
+    </div>
+
+</body>
+</html>

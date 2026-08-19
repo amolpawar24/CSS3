@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Padding Properties</title>
+
+    <style>
+
+        /* =====================================================
+           BASIC PAGE STYLING
+        ===================================================== */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+
+        /* =====================================================
+           COMMON BOX STYLE
+        ===================================================== */
+
+        .box {
+            width: 250px;
+            min-height: 100px;
+
+            border: 5px solid black;
+
+            background-color: lightblue;
+
+            margin: 30px auto;
+
+            text-align: center;
+        }
+
+
+        /* =====================================================
+           1. PADDING - ALL SIDES
+        ===================================================== */
+
+        .padding-all {
+            padding: 30px;
+        }
+
+
+        /* =====================================================
+           2. PADDING-TOP
+        ===================================================== */
+
+        .padding-top {
+            padding-top: 50px;
+        }
+
+
+        /* =====================================================
+           3. PADDING-RIGHT
+        ===================================================== */
+
+        .padding-right {
+            padding-right: 100px;
+        }
+
+
+        /* =====================================================
+           4. PADDING-BOTTOM
+        ===================================================== */
+
+        .padding-bottom {
+            padding-bottom: 50px;
+        }
+
+
+        /* =====================================================
+           5. PADDING-LEFT
+        ===================================================== */
+
+        .padding-left {
+            padding-left: 100px;
+        }
+
+
+        /* =====================================================
+           6. PADDING - TWO VALUES
+           
+           Top & Bottom = 20px
+           Left & Right = 50px
+        ===================================================== */
+
+        .padding-two-values {
+            padding: 20px 50px;
+        }
+
+
+        /* =====================================================
+           7. PADDING - FOUR VALUES
+
+           Top    = 10px
+           Right  = 20px
+           Bottom = 30px
+           Left   = 40px
+        ===================================================== */
+
+        .padding-four-values {
+            padding: 10px 20px 30px 40px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Padding Properties</h1>
+
+
+    <!-- =====================================================
+         1. PADDING
+         Applies padding to ALL four sides
+    ====================================================== -->
+
+    <h2>1. Padding - All Sides</h2>
+
+    <div class="box padding-all">
+        Padding on all four sides
+    </div>
+
+
+    <!-- =====================================================
+         2. PADDING-TOP
+    ====================================================== -->
+
+    <h2>2. Padding Top</h2>
+
+    <div class="box padding-top">
+        Padding on Top
+    </div>
+
+
+    <!-- =====================================================
+         3. PADDING-RIGHT
+    ====================================================== -->
+
+    <h2>3. Padding Right</h2>
+
+    <div class="box padding-right">
+        Padding on Right
+    </div>
+
+
+    <!-- =====================================================
+         4. PADDING-BOTTOM
+    ====================================================== -->
+
+    <h2>4. Padding Bottom</h2>
+
+    <div class="box padding-bottom">
+        Padding on Bottom
+    </div>
+
+
+    <!-- =====================================================
+         5. PADDING-LEFT
+    ====================================================== -->
+
+    <h2>5. Padding Left</h2>
+
+    <div class="box padding-left">
+        Padding on Left
+    </div>
+
+
+    <!-- =====================================================
+         6. PADDING - TWO VALUES
+         
+         padding: 20px 50px;
+
+         Top & Bottom = 20px
+         Left & Right = 50px
+    ====================================================== -->
+
+    <h2>6. Padding - Two Values</h2>
+
+    <div class="box padding-two-values">
+        Two Value Padding
+    </div>
+
+
+    <!-- =====================================================
+         7. PADDING - FOUR VALUES
+
+         padding: 10px 20px 30px 40px;
+
+         Top    = 10px
+         Right  = 20px
+         Bottom = 30px
+         Left   = 40px
+
+         Direction: TOP → RIGHT → BOTTOM → LEFT
+    ====================================================== -->
+
+    <h2>7. Padding - Four Values</h2>
+
+    <div class="box padding-four-values">
+        Four Value Padding
+    </div>
+
+</body>
+</html>
