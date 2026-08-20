@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Variables</title>
+
+    <style>
+
+        /* =========================================
+           CSS VARIABLES
+        ========================================= */
+
+        :root {
+            --primary-color: blue;
+            --secondary-color: orange;
+            --text-color: white;
+            --box-width: 300px;
+            --box-height: 150px;
+            --border-radius: 20px;
+            --font-size: 2rem;
+        }
+
+
+        /* =========================================
+           USING VARIABLES
+        ========================================= */
+
+        .box {
+            width: var(--box-width);
+            height: var(--box-height);
+
+            background-color: var(--primary-color);
+            color: var(--text-color);
+
+            border-radius: var(--border-radius);
+
+            font-size: var(--font-size);
+
+            text-align: center;
+            line-height: var(--box-height);
+
+            margin: 30px;
+        }
+
+
+        .box-2 {
+            background-color: var(--secondary-color);
+        }
+
+
+        /* =========================================
+           SAME VARIABLE USED MULTIPLE TIMES
+        ========================================= */
+
+        .heading {
+            color: var(--primary-color);
+        }
+
+        .button {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+
+            border-radius: var(--border-radius);
+
+            padding: 10px 20px;
+            border: none;
+            font-size: 1rem;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 class="heading">
+        CSS Variables
+    </h1>
+
+
+    <div class="box">
+        Box 1
+    </div>
+
+
+    <div class="box box-2">
+        Box 2
+    </div>
+
+
+    <button class="button">
+        Click Me
+    </button>
+
+</body>
+
+</html>
