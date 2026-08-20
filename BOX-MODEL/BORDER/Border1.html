@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Border{
+            height: 350px;
+            width: 350px;
+            border: 2px solid;
+            margin-top: 20px;
+            background-color: black;
+            color: white;
+            font-weight: bolder;
+            text-align: center;
+            font-size: 30px;
+            line-height: 9.55;
+        }
+
+        .BorderShort{
+            height: 350px;
+            width: 350px;
+            border: 2px solid;
+            margin-top: 20px;
+            background-color: red;
+            color: cyan;
+            font-weight: bolder;
+            text-align: center;
+            font-size: 30px;
+            line-height: 9.55;
+        }
+
+        #Border1{
+            border-top-width: 10px;
+            border-top-style: dashed;
+            border-top-color: yellow;
+        }
+
+        #Border2{
+            border-right-width: 10px;
+            border-right-style: dashed;
+            border-right-color: yellow;
+        }
+        #Border3{
+            border-bottom-width: 10px;
+            border-bottom-style: double;
+            border-bottom-color: yellow;
+        }
+        #Border4{
+            border-left-width: 10px;
+            border-left-style: groove;
+            border-left-color: yellow;
+        }
+
+        #BorderTop{
+            border-top: 10px dashed yellow;
+        }
+
+        #BorderRight{
+            border-right: 10px dotted yellow;
+        }
+
+        #BorderBottom{
+            border-bottom: 10px double yellow;
+        }
+
+        #BorderLeft{
+            border-left: 10px groove yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="Border" id="Border1">BORDER-TOP</div>
+    <div class="Border" id="Border2">BORDER-RIGHT</div>
+    <div class="Border" id="Border3">BORDER-BOTTOM</div>
+    <div class="Border" id="Border4">BORDER-LEFT</div>
+
+    <!--! SHORT HAND PROPERTY  -->
+    <div class="BorderShort" id="BorderTop">BORDER-TOP</div>
+    <div class="BorderShort" id="BorderRight">BORDER-RIGHT</div>
+    <div class="BorderShort" id="BorderBottom">BORDER-BOTTOM</div>
+    <div class="BorderShort" id="BorderLeft">BORDER-LEFT</div>
+</body>
+</html>
