@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Border Radius</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            width: 250px;
+            height: 150px;
+            border: 2px solid black;
+            margin: 30px;
+            text-align: center;
+            line-height: 150px;
+        }
+
+
+        /* =========================================
+           1. border-radius
+        ========================================= */
+
+        .radius-1 {
+            border-radius: 20px;
+        }
+
+
+        /* =========================================
+           2. border-radius: 50%
+        ========================================= */
+
+        .radius-2 {
+            border-radius: 50%;
+        }
+
+
+        /* =========================================
+           3. border-top-left-radius
+        ========================================= */
+
+        .radius-3 {
+            border-top-left-radius: 50px;
+        }
+
+
+        /* =========================================
+           4. border-top-right-radius
+        ========================================= */
+
+        .radius-4 {
+            border-top-right-radius: 50px;
+        }
+
+
+        /* =========================================
+           5. border-bottom-right-radius
+        ========================================= */
+
+        .radius-5 {
+            border-bottom-right-radius: 50px;
+        }
+
+
+        /* =========================================
+           6. border-bottom-left-radius
+        ========================================= */
+
+        .radius-6 {
+            border-bottom-left-radius: 50px;
+        }
+
+
+        /* =========================================
+           7. Two Values
+           
+           Top-left + Bottom-right
+           Top-right + Bottom-left
+        ========================================= */
+
+        .radius-7 {
+            border-radius: 50px 10px;
+        }
+
+
+        /* =========================================
+           8. Four Values
+           
+           Top-left
+           Top-right
+           Bottom-right
+           Bottom-left
+        ========================================= */
+
+        .radius-8 {
+            border-radius: 10px 20px 30px 40px;
+        }
+
+
+        /* =========================================
+           9. Different horizontal and vertical radius
+        ========================================= */
+
+        .radius-9 {
+            border-radius: 50px / 20px;
+        }
+
+
+        /* =========================================
+           10. Ellipse
+        ========================================= */
+
+        .radius-10 {
+            width: 400px;
+            border-radius: 50%;
+        }
+
+
+        /* =========================================
+           11. Circle
+        ========================================= */
+
+        .radius-11 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            line-height: 200px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="box radius-1">
+        20px
+    </div>
+
+
+    <div class="box radius-2">
+        50%
+    </div>
+
+
+    <div class="box radius-3">
+        Top Left
+    </div>
+
+
+    <div class="box radius-4">
+        Top Right
+    </div>
+
+
+    <div class="box radius-5">
+        Bottom Right
+    </div>
+
+
+    <div class="box radius-6">
+        Bottom Left
+    </div>
+
+
+    <div class="box radius-7">
+        Two Values
+    </div>
+
+
+    <div class="box radius-8">
+        Four Values
+    </div>
+
+
+    <div class="box radius-9">
+        Horizontal / Vertical
+    </div>
+
+
+    <div class="box radius-10">
+        Ellipse
+    </div>
+
+
+    <div class="box radius-11">
+        Circle
+    </div>
+
+</body>
+
+</html>
