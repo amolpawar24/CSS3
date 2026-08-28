@@ -1,4 +1,3 @@
-"# CSS3" 
 # CSS3
 
 A comprehensive CSS3 learning and reference repository — covering everything from absolute beginner fundamentals to modern, advanced CSS. Built as a personal documentation project and a practical reference for frontend development and interview preparation.
