@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Buttons</title>
+
+    <style>
+
+        body {
+            margin: 50px;
+            font-family: Arial, sans-serif;
+        }
+
+
+        /* =========================================
+           BASIC BUTTON
+        ========================================= */
+
+        .btn {
+            padding: 15px 30px;
+
+            border: 1px solid black;
+
+            background-color: blue;
+            color: white;
+
+            font-size: 18px;
+            font-weight: bold;
+
+            border-radius: 8px;
+
+            cursor: pointer;
+        }
+
+
+        /* =========================================
+           BUTTON WITH NO BORDER
+        ========================================= */
+
+        .btn-no-border {
+            padding: 15px 30px;
+
+            border: none;
+
+            background-color: green;
+            color: white;
+
+            font-size: 18px;
+
+            border-radius: 8px;
+
+            cursor: pointer;
+        }
+
+
+        /* =========================================
+           ROUNDED BUTTON
+        ========================================= */
+
+        .btn-rounded {
+            padding: 15px 30px;
+
+            border: none;
+
+            background-color: orange;
+            color: black;
+
+            font-size: 18px;
+            font-weight: bold;
+
+            border-radius: 50px;
+
+            cursor: pointer;
+        }
+
+
+        /* =========================================
+           OUTLINE BUTTON
+        ========================================= */
+
+        .btn-outline {
+            padding: 15px 30px;
+
+            border: 2px solid blue;
+
+            background-color: white;
+            color: blue;
+
+            font-size: 18px;
+            font-weight: bold;
+
+            border-radius: 8px;
+
+            cursor: pointer;
+        }
+
+
+        /* =========================================
+           BUTTON WITH SHADOW
+        ========================================= */
+
+        .btn-shadow {
+            padding: 15px 30px;
+
+            border: none;
+
+            background-color: purple;
+            color: white;
+
+            font-size: 18px;
+            font-weight: bold;
+
+            border-radius: 8px;
+
+            cursor: pointer;
+
+            box-shadow: 3px 5px 10px gray;
+        }
+
+
+        /* =========================================
+           HOVER EFFECT
+        ========================================= */
+
+        .btn-hover {
+            padding: 15px 30px;
+
+            border: none;
+
+            background-color: blue;
+            color: white;
+
+            font-size: 18px;
+
+            border-radius: 8px;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        .btn-hover:hover {
+            background-color: darkblue;
+        }
+
+
+        /* =========================================
+           ACTIVE EFFECT
+        ========================================= */
+
+        .btn-active {
+            padding: 15px 30px;
+
+            border: none;
+
+            background-color: red;
+            color: white;
+
+            font-size: 18px;
+
+            border-radius: 8px;
+
+            cursor: pointer;
+        }
+
+        .btn-active:active {
+            background-color: darkred;
+        }
+
+
+        /* =========================================
+           BUTTON DISABLED
+        ========================================= */
+
+        .btn-disabled {
+            padding: 15px 30px;
+
+            border: none;
+
+            background-color: gray;
+            color: white;
+
+            font-size: 18px;
+
+            border-radius: 8px;
+
+            cursor: not-allowed;
+
+            opacity: 0.6;
+        }
+
+
+        /* =========================================
+           BUTTON WITH TRANSFORM
+        ========================================= */
+
+        .btn-transform {
+            padding: 15px 30px;
+
+            border: none;
+
+            background-color: teal;
+            color: white;
+
+            font-size: 18px;
+
+            border-radius: 8px;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        .btn-transform:hover {
+            transform: translateY(-3px);
+        }
+
+
+        /* =========================================
+           BUTTON WITH BOX SHADOW
+        ========================================= */
+
+        .btn-glow {
+            padding: 15px 30px;
+
+            border: none;
+
+            background-color: black;
+            color: white;
+
+            font-size: 18px;
+
+            border-radius: 8px;
+
+            cursor: pointer;
+
+            box-shadow: 0 0 10px blue;
+        }
+
+
+        /* =========================================
+           BUTTON GROUP
+        ========================================= */
+
+        .button-group {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>CSS Buttons</h1>
+
+
+    <div class="button-group">
+
+        <button class="btn">
+            Basic Button
+        </button>
+
+        <button class="btn-no-border">
+            No Border
+        </button>
+
+        <button class="btn-rounded">
+            Rounded
+        </button>
+
+    </div>
+
+
+    <div class="button-group">
+
+        <button class="btn-outline">
+            Outline
+        </button>
+
+        <button class="btn-shadow">
+            Shadow
+        </button>
+
+        <button class="btn-hover">
+            Hover Me
+        </button>
+
+    </div>
+
+
+    <div class="button-group">
+
+        <button class="btn-active">
+            Click Me
+        </button>
+
+        <button class="btn-disabled" disabled>
+            Disabled
+        </button>
+
+        <button class="btn-transform">
+            Move Me
+        </button>
+
+        <button class="btn-glow">
+            Glow
+        </button>
+
+    </div>
+
+</body>
+
+</html>
