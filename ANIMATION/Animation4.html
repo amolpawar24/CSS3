@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        div{
+            height: 500px;
+            width: 900px;
+            border: 1px solid;
+            margin: 100px auto;
+        }
+       img{
+        height: 500px;
+        width: 900px;
+
+       }
+       #slider{
+        position: absolute;
+         height: 500px;
+         width: 934px;
+         border: 1px solid;
+         display: inline-block;
+         background-color: red;
+         z-index: 1;
+         top: 0px;
+         left: 300px;
+         perspective: 100px;
+         transition: 2S all linear;
+         animation: slider 7s linear infinite;
+       }
+       @keyframes slider {
+        from{
+            width:934px;
+        }
+        to{
+            width:55px;
+            transform-style: preserve-3d;
+
+        }
+       }
+    </style>
+</head>
+<body>
+    <div id="slider">
+        
+    </div>
+    <div>
+        <img src="./../IMAGES/Mountains 1.jpg" alt="">
+    </div>
+    
+</body>
+</html>
