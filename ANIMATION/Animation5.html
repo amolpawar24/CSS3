@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 30px;
+        }
+        #Heart{
+            position: relative;
+            width: 200px;
+            height: 180px;
+            perspective: 200px;
+            transition: all 2s linear;
+            animation: Hearts infinite 1s ease;
+            transform-style: preserve-3d;
+
+        }
+        #Heart::before,#Heart::after{
+            content: ' ';
+            position: absolute;
+            left: 100px;
+            top: 0;
+            width: 100px;
+            height: 160px;
+            border-radius: 50px 50px 0px 0px;
+            transform: rotate(-45deg);
+            background-color: red;
+            transform-origin: 0 100%;
+        }
+        #Heart::after{
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+        @keyframes Hearts {
+            0%{
+                transform: scale(1);
+                filter: drop-shadow(1px 1px 55px cyan);
+            }
+            50%{
+                transform: scale(1.22);
+                filter: drop-shadow(1px 1px 55px red);
+
+            }
+            100%{
+                transform: scale(0.90);
+                filter: drop-shadow(1px 1px 55px blue);
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        
+    <div id="Heart">
+
+    </div>
+    </main>
+</body>
+</html>
