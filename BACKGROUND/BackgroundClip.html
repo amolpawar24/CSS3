@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #BorderBox {
+        height: 500px;
+        width: 900px;
+        background-color: cyan;
+        margin: auto;
+        border: 10px solid;
+        border-style: dotted;
+        background-image: url(../../ASSETS/IMAGES/Mountains\ 1.jpg);
+        background-clip: border-box;
+      }
+      #ContentBox {
+        height: 500px;
+        width: 900px;
+        background-color: red;
+        margin: auto;
+        border: 10px solid;
+        border-style: dotted;
+        background-image: url(../../ASSETS/IMAGES/Mountains\ 1.jpg);
+        background-clip: content-box;
+      }
+      #PaddingBox{ 
+        height: 500px;
+        width: 900px;
+        background-color: yellow;
+        margin: auto;
+        border: 10px solid;
+        border-style: dotted;
+        background-image: url(../../ASSETS/IMAGES/Mountains\ 1.jpg);
+        background-clip: padding-box;
+      }
+    </style>
+  </head>
+  <body>
+    <!--! BACKGROUND CLIP  -->
+    <!--* Background-Clip Properties  -->
+    <!--? background-clip : border-box : It takes (shows) content from Border  -->
+    <!--? background-clip : content-box : It takes (shows) content from Starting Content   -->
+    <!--? background-clip : padding-box : It takes (shows) content from Starting Content but their is some space(padding)  -->
+    <div id="BorderBox">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, error
+      iusto? Rem impedit adipisci corporis aliquid et dolor, at illum similique
+      quo rerum maiores.
+    </div>
+
+    <br>
+
+    <div id="ContentBox">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, error
+        iusto? Rem impedit adipisci corporis aliquid et dolor, at illum similique
+        quo rerum maiores.
+    </div>
+
+    <br>
+
+
+    <div id="PaddingBox">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, error
+        iusto? Rem impedit adipisci corporis aliquid et dolor, at illum similique
+        quo rerum maiores.
+    </div>
+
+  </body>
+</html>
