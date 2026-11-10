@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Ball{
+            height: 55px;
+            width: 55px;
+            border: 1px solid;
+            border-radius: 50%;
+            margin: 0px 0px 0px 550px;
+            position: relative;
+            animation: anim 2s linear infinite;
+        }
+        #Box{
+            width: 400px;
+            height: 300px;
+            border: 1px solid;
+            margin: 0 auto;
+        }
+        @keyframes anim {
+            0%{
+                top: 0;
+                left: 0;
+            }
+            25%{
+                top: 0;
+                left: 410px;
+            }
+            50%{
+                top: 360px;
+                left:410px
+            }
+            75%{
+                top: 360px;
+                left: -55px;
+            }
+            100%{
+                top: 0;
+                left: -45px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="Ball"></div>
+        <div id="Box"></div>
+    </main>
+</body>
+</html>
