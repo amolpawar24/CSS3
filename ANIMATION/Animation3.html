@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #000000;
+        }
+        main{
+            width: 100%;
+            height: 250px;
+            border: 1px solid;
+            margin: 250px auto;
+        }
+        #Text{
+            height: 165px;
+            width: 100%;
+            border: 1px solid;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 50px auto;
+        }
+        #Text span{
+            height: 150px;
+            width: 150px;
+            border: 1px solid;
+            line-height: 150px;
+            text-align: center;
+            font-size: 11rem;
+            font-weight: 900;
+            -webkit-text-fill-color: rgba(0, 0, 0, 0.122);
+            -webkit-background-clip: text;
+            
+        }
+        #one{
+            transition: 2s all linear;
+            animation: text 2s linear infinite;
+        }
+        @keyframes text {
+            0%{
+                transform: translateY(-15px);
+                text-shadow:-1x 2px 3px red ,-1px 173px 64px blue,-1px 34px 45px cyan;
+                -webkit-text-fill-color: red;
+            }
+            25%{
+                text-shadow: #fff,-1x 2px 3px red;
+
+            }
+            50%{
+                text-shadow: #fff,-1x 2px 3px red;
+            }
+            75%{
+                text-shadow: #fff,-1x 2px 3px red;
+            }
+            100%{
+                text-shadow: #fff,-1x 2px 3px red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="Text">
+            <span id="one">W</span>
+            <span id="two">E</span>
+            <span id="three">B</span>
+            <span id="four">T</span>
+            <span id="five">E</span>
+            <span id="six">C</span>
+            <span id="seven">H</span>
+        </div>
+    </main>
+</body>
+</html>
